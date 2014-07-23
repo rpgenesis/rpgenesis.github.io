@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "FiraSansTitle";
+    src: url("FiraSans-Bold.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FiraSansText";
+    src: url("FiraSans-Book.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FiraSansHeader";
+    src: url("FiraSans-Ultra.otf");
+    font-weight: normal;
+    font-style: normal;
+}
