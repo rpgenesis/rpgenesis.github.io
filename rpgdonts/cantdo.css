@@ -1,0 +1,32 @@
+*{
+	margin: 0px;
+	color:white;
+}
+body{
+	background-image: url(julien.gif);
+}
+header{
+	padding:10px;
+	font-family: 'Montserrat', sans-serif;
+}
+h1{
+	font-size: 20px;
+}
+h2 {
+	font-size: 14px;
+}
+article{
+	font-family: 'Bitter', serif;
+	font-size: 24px;
+}
+#cantdo{
+	display: block;
+	background-color: red;
+	padding: 18px 10px 18px 10px;
+	text-decoration: none;
+}
+footer{
+	padding: 20px 10px 10px 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10px;
+}

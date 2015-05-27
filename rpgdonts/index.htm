@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>One random thing I can no longer do during an RPG</title>
+    <link rel="stylesheet" href="cantdo.css">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:700|Bitter' rel='stylesheet' type='text/css'>
+    <script>
+        function readTextFile(file)
+        {
+            var request = new XMLHttpRequest();
+            request.onload = function() {
+                var fileContent = this.responseText;
+                var fileContentLines = fileContent.split( '\n' );
+                var randomLineIndex = Math.floor( Math.random() * fileContentLines.length );
+                var randomLine = fileContentLines[ randomLineIndex ];
+                document.getElementById( 'cantdo' ).innerHTML = randomLine;
+            };
+            request.open( 'GET', file, true );
+            request.send();
+        }
+    </script>
+</head>
+<body>
+<header>
+<h1>One random thing I can no longer do during an RPG</h1>
+<h2>(click on it to see another random thing)</h2>
+</header>
+<article><a href="javascript:void(0)"  onclick="readTextFile('cantdo.txt')" id="cantdo"></a></article>   
+<footer>
+<p>Coded for your mobile entertainement by <a href="https://twitter.com/gamerdreamerman/" target="_blank">@gamerdreamerman</a>.</p>
+<p>"2350 things Mr. Welch can no longer do during an RPG" was written by
+<a href="http://theglen.livejournal.com/" target="_blank">TheGlen</a>.</p>
+<p>Background pattern image by 
+<a href="https://twitter.com/julienrenvoye" target="_blank">@JulienRenvoye</a>.</p>
+</footer> 
+<script>readTextFile('cantdo.txt');</script>
+</body>
+</html>
+
