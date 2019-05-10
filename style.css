@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'regular';
+  src: url('font/regular.otf'); 
+}
+@font-face {
+  font-family: 'bold';
+  src: url('font/bold.otf'); 
+}
+body{
+    font-family: 'regular', sans-serif;
+    background-color: white;
+    color: black;
+}
+h1, h2, h3{
+    font-family: 'bold', sans-serif;
+    background-color: black;
+    color: white;
+    padding: 0px 20px;
+} 
+.transition-fade {
+    transition: .4s;
+    opacity: 1;
+}
+html.is-animating .transition-fade{
+    opacity: 0;
+}
+#banner{
+    width:100%;
+}
+#flag{
+    width:100%;
+    display:none;
+}
+@media only screen and (max-width: 800px){ 
+   #banner{ display: none; }
+   #flag{ display: block; }
+}
